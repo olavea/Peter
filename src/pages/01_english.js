@@ -1,8 +1,27 @@
 import React from 'react'
-// import Layout from '../components/layout'
-// import one from '../images/01_english.png'
+import Layout from '../components/layout'
 import Img from 'gatsby-image'
 import { StaticQuery, graphql, Link } from 'gatsby'
+
+import styled from 'styled-components'
+
+import logo from '../images/peter-icon2.png'
+
+const NavWrapper = styled.div`
+  background: #ffa500;
+
+  margin-bottom: 0.33rem;
+  img {
+    margin-bottom: 0;
+  }
+`
+
+const NavContainer = styled.div`
+  margin: 0 auto;
+
+  max-width: 960px;
+  padding: 0.33rem;
+`
 
 const ImageOne = ({ children }) => (
   <StaticQuery
@@ -14,7 +33,7 @@ const ImageOne = ({ children }) => (
             description
           }
         }
-        file(relativePath: { regex: "/01_english/" }) {
+        file(relativePath: { regex: "/peter08/" }) {
           childImageSharp {
             fluid(maxWidth: 10000) {
               ...GatsbyImageSharpFluid_tracedSVG
@@ -25,17 +44,49 @@ const ImageOne = ({ children }) => (
     `}
     render={data => (
       <>
-        <Img fluid={data.file.childImageSharp.fluid} />
+        <Layout>
+          <Img fluid={data.file.childImageSharp.fluid} />
 
-        <div>{children}</div>
-        <Link to="/00_english"> Previous Page.../ </Link>
-        <Link to="/02_english"> / Or go to the Next Page </Link>
+          <div>{children}</div>
+          <p>
+            Once upon a time there were four little Rabbits, and their names
+            were— Flopsy, Mopsy, Cotton-tail, and Peter.
+          </p>
+          <p>
+            They lived with their Mother in a sand-bank, underneath the root of
+            a very big fir-tree.
+          </p>
+          <NavWrapper>
+            <NavContainer>
+              <h1 style={{ margin: 0 }}>
+                <Link
+                  to="/02_english"
+                  style={{
+                    color: 'white',
+                    textDecoration: 'none',
+                  }}
+                >
+                  <img
+                    style={{
+                      width: '333px',
+                    }}
+                    src={logo}
+                    alt="Geff Logo"
+                  />
+                </Link>
+              </h1>
+            </NavContainer>
+          </NavWrapper>
+          <Link to="/00_english"> go back one page </Link>
+        </Layout>
       </>
     )}
   />
 )
+
 export default ImageOne
 
+// shadow: #ff9000;
 // const About = () => (
 //   <Layout>
 //     <div>

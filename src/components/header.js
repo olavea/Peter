@@ -2,11 +2,11 @@ import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 
-import logo from '../images/geff-icon.jpg'
+import logo from '../images/peter-icon8_eye.png'
 
 const HeaderWrapper = styled.div`
-  background: #ffa500;
-  margin-bottom: 0.33rem;
+  background: #ffffff;
+  margin-bottom: 0.11rem;
   img {
     margin-bottom: 0;
   }
@@ -31,7 +31,7 @@ const Header = ({ siteTitle }) => (
         >
           <img
             style={{
-              width: '33px',
+              width: '66px',
             }}
             src={logo}
             alt="Geff Logo"

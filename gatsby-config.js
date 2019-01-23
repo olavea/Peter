@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Geff the Giraffe`,
-    description: `Geff and ... goes ....`,
-    author: `Andreas Brox-Fadum.`,
+    title: `The Tale of Peter Rabbit`,
+    description: `Produced by Robert Cicconetti, Ronald Holder and the PG Online
+    Distributed Proofreading Team (http://www.pgdp.net).`,
+    author: `Beatrix Potter`,
     dev: `Ola Vea made another OlaBook`,
     pageNav: [{ label: 'Back', path: '/' }],
   },
@@ -21,7 +22,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/geff-icon.jpg`, // This path is relative to the root of the site.
+        icon: `src/images/peter-eye-con9.png`, // This path is relative to the root of the site.
       },
     },
 

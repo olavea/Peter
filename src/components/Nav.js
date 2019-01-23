@@ -4,6 +4,22 @@
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faLongArrowAltLeft } from '@fortawesome/free-solid-svg-icons'
 
+// const Nav = ({ pages }) => (
+//   <nav className="nav">
+//     {pages.map((item, key) => (
+//       <Link key={key} className="nav-item" alt={page.label} to={page.path}>
+//         {page.path === '/' ? (
+//           <FontAwesomeIcon icon={faLongArrowAltLeft} />
+//         ) : (
+//           item.label
+//         )}
+//       </Link>
+//     ))}
+//   </nav>
+// )
+
+// export default Nav
+
 // const Nav = ({ items }) => (
 //   <nav className="nav">
 //     {items.map((item, key) => (
