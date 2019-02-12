@@ -5,12 +5,12 @@ import { StaticQuery, graphql, Link } from 'gatsby'
 
 import styled from 'styled-components'
 
-import logo from '../images/peter-icon2.png'
+import logo from '../images/uniparrot4.png'
 
 const NavWrapper = styled.div`
-  background: #ffa500;
+  background: #ffffff;
 
-  margin-bottom: 0.33rem;
+  margin-bottom: 0.13rem;
   img {
     margin-bottom: 0;
   }
@@ -20,7 +20,7 @@ const NavContainer = styled.div`
   margin: 0 auto;
 
   max-width: 960px;
-  padding: 0.33rem;
+  padding: 0.13rem;
 `
 
 const ImageOne = ({ children }) => (
@@ -45,6 +45,27 @@ const ImageOne = ({ children }) => (
     render={data => (
       <>
         <Layout>
+          <NavWrapper>
+            <NavContainer>
+              <h1 style={{ margin: 0 }}>
+                <Link
+                  to="/23_english"
+                  style={{
+                    color: 'white',
+                    textDecoration: 'none',
+                  }}
+                >
+                  <img
+                    style={{
+                      width: '133px',
+                    }}
+                    src={logo}
+                    alt="Geff Logo"
+                  />
+                </Link>
+              </h1>
+            </NavContainer>
+          </NavWrapper>
           <Img fluid={data.file.childImageSharp.fluid} />
 
           <div>{children}</div>
@@ -58,27 +79,6 @@ const ImageOne = ({ children }) => (
             care. He slipped underneath the gate, and was safe at last in the
             wood outside the garden.
           </p>
-          <NavWrapper>
-            <NavContainer>
-              <h1 style={{ margin: 0 }}>
-                <Link
-                  to="/23_english"
-                  style={{
-                    color: 'white',
-                    textDecoration: 'none',
-                  }}
-                >
-                  <img
-                    style={{
-                      width: '333px',
-                    }}
-                    src={logo}
-                    alt="Geff Logo"
-                  />
-                </Link>
-              </h1>
-            </NavContainer>
-          </NavWrapper>
           <Link to="/21_english"> or go back one page </Link>
         </Layout>
       </>

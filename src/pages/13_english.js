@@ -5,12 +5,12 @@ import { StaticQuery, graphql, Link } from 'gatsby'
 
 import styled from 'styled-components'
 
-import logo from '../images/peter-icon2.png'
+import logo from '../images/uniparrot4.png'
 
 const NavWrapper = styled.div`
-  background: #ffa500;
+  background: #ffffff;
 
-  margin-bottom: 0.33rem;
+  margin-bottom: 0.13rem;
   img {
     margin-bottom: 0;
   }
@@ -20,7 +20,7 @@ const NavContainer = styled.div`
   margin: 0 auto;
 
   max-width: 960px;
-  padding: 0.33rem;
+  padding: 0.13rem;
 `
 
 const ImageOne = ({ children }) => (
@@ -45,14 +45,6 @@ const ImageOne = ({ children }) => (
     render={data => (
       <>
         <Layout>
-          <Img fluid={data.file.childImageSharp.fluid} />
-
-          <div>{children}</div>
-          <p>
-            Peter gave himself up for lost, and shed big tears, but his sobs
-            were overheard by some friendly sparrows, who flew to him in great
-            excitement, and implored him to exert himself.
-          </p>
           <NavWrapper>
             <NavContainer>
               <h1 style={{ margin: 0 }}>
@@ -65,7 +57,7 @@ const ImageOne = ({ children }) => (
                 >
                   <img
                     style={{
-                      width: '333px',
+                      width: '133px',
                     }}
                     src={logo}
                     alt="Geff Logo"
@@ -74,6 +66,14 @@ const ImageOne = ({ children }) => (
               </h1>
             </NavContainer>
           </NavWrapper>
+          <Img fluid={data.file.childImageSharp.fluid} />
+
+          <div>{children}</div>
+          <p>
+            Peter gave himself up for lost, and shed big tears, but his sobs
+            were overheard by some friendly sparrows, who flew to him in great
+            excitement, and implored him to exert himself.
+          </p>
           <Link to="/12_english"> or go back one page </Link>
         </Layout>
       </>

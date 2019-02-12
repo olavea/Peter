@@ -4,12 +4,12 @@ import zero from '../images/peter02.gif'
 // import Listing from '../components/Listing'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
-import logo from '../images/peter-icon2.png'
+import logo from '../images/uniparrot4.png'
 
 const NavWrapper = styled.div`
-  background: #ffa500;
+  background: #ffffff;
 
-  margin-bottom: 0.33rem;
+  margin-bottom: 0.13rem;
   img {
     margin-bottom: 0;
   }
@@ -19,19 +19,12 @@ const NavContainer = styled.div`
   margin: 0 auto;
 
   max-width: 960px;
-  padding: 0.33rem;
+  padding: 0.13rem;
 `
 
 const About = () => (
   <Layout>
     <div>
-      <img
-        style={{
-          width: '333px',
-        }}
-        src={zero}
-        alt="Peter Rabbit"
-      />
       <NavWrapper>
         <NavContainer>
           <h1 style={{ margin: 0 }}>
@@ -44,7 +37,7 @@ const About = () => (
             >
               <img
                 style={{
-                  width: '333px',
+                  width: '133px',
                 }}
                 src={logo}
                 alt="Geff Logo"
@@ -53,6 +46,13 @@ const About = () => (
           </h1>
         </NavContainer>
       </NavWrapper>
+      <img
+        style={{
+          width: '333px',
+        }}
+        src={zero}
+        alt="Peter Rabbit"
+      />
       <Link to="/"> or go back one page </Link>
     </div>
   </Layout>

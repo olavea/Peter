@@ -5,7 +5,8 @@ import { StaticQuery, graphql, Link } from 'gatsby'
 
 import styled from 'styled-components'
 
-import logo from '../images/peter-icon2.png'
+import logo from '../images/Young_Beatrix_Potter.jpg'
+import dog from '../images/Young_Beatrix_Potter_Dog.jpg'
 
 const ImageOne = ({ children }) => (
   <StaticQuery
@@ -48,6 +49,21 @@ const ImageOne = ({ children }) => (
             End of Project Gutenberg's The Tale of Peter Rabbit, by Beatrix
             Potter
           </p>
+          <img
+            style={{
+              width: '66px',
+            }}
+            src={logo}
+            alt="Beatrix"
+          />
+          <p>Potter at fifteen years with her springer spaniel, Spot</p>
+          <img
+            style={{
+              width: '333px',
+            }}
+            src={dog}
+            alt="Beatrix"
+          />
 
           <p>
             This and all associated files of various formats will be found in:
@@ -480,3 +496,11 @@ const ImageOne = ({ children }) => (
 )
 
 export default ImageOne
+
+//   <img
+//   style={{
+//     width: '333px',
+//   }}
+//   src={https://en.wikipedia.org/wiki/Beatrix_Potter#/media/File:Beatrix_Potter_dummy_manuscripts.jpg}
+//   alt="Beatrix"
+// />

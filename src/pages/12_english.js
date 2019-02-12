@@ -5,12 +5,12 @@ import { StaticQuery, graphql, Link } from 'gatsby'
 
 import styled from 'styled-components'
 
-import logo from '../images/peter-icon2.png'
+import logo from '../images/uniparrot4.png'
 
 const NavWrapper = styled.div`
-  background: #ffa500;
+  background: #ffffff;
 
-  margin-bottom: 0.33rem;
+  margin-bottom: 0.13rem;
   img {
     margin-bottom: 0;
   }
@@ -20,7 +20,7 @@ const NavContainer = styled.div`
   margin: 0 auto;
 
   max-width: 960px;
-  padding: 0.33rem;
+  padding: 0.13rem;
 `
 
 const ImageOne = ({ children }) => (
@@ -45,16 +45,6 @@ const ImageOne = ({ children }) => (
     render={data => (
       <>
         <Layout>
-          <Img fluid={data.file.childImageSharp.fluid} />
-
-          <div>{children}</div>
-          <p>
-            After losing them, he ran on four legs and went faster, so that I
-            think he might have got away altogether if he had not unfortunately
-            run into a gooseberry net, and got caught by the large buttons on
-            his jacket. It was a blue jacket with brass buttons, quite new.
-          </p>
-
           <NavWrapper>
             <NavContainer>
               <h1 style={{ margin: 0 }}>
@@ -67,7 +57,7 @@ const ImageOne = ({ children }) => (
                 >
                   <img
                     style={{
-                      width: '333px',
+                      width: '133px',
                     }}
                     src={logo}
                     alt="Geff Logo"
@@ -76,6 +66,15 @@ const ImageOne = ({ children }) => (
               </h1>
             </NavContainer>
           </NavWrapper>
+          <Img fluid={data.file.childImageSharp.fluid} />
+
+          <div>{children}</div>
+          <p>
+            After losing them, he ran on four legs and went faster, so that I
+            think he might have got away altogether if he had not unfortunately
+            run into a gooseberry net, and got caught by the large buttons on
+            his jacket. It was a blue jacket with brass buttons, quite new.
+          </p>
           <Link to="/11_english"> or go back one page </Link>
         </Layout>
       </>

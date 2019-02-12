@@ -5,12 +5,12 @@ import { StaticQuery, graphql, Link } from 'gatsby'
 
 import styled from 'styled-components'
 
-import logo from '../images/peter-icon2.png'
+import logo from '../images/uniparrot4.png'
 
 const NavWrapper = styled.div`
-  background: #ffa500;
+  background: #ffffff;
 
-  margin-bottom: 0.33rem;
+  margin-bottom: 0.13rem;
   img {
     margin-bottom: 0;
   }
@@ -20,7 +20,7 @@ const NavContainer = styled.div`
   margin: 0 auto;
 
   max-width: 960px;
-  padding: 0.33rem;
+  padding: 0.13rem;
 `
 
 const ImageOne = ({ children }) => (
@@ -45,17 +45,6 @@ const ImageOne = ({ children }) => (
     render={data => (
       <>
         <Layout>
-          <Img fluid={data.file.childImageSharp.fluid} />
-
-          <div>{children}</div>
-          <p>
-            Peter was most dreadfully frightened, he rushed all over the garden,
-            for he had forgotten the way back to the gate.
-          </p>
-          <p>
-            He lost one of his shoes among the cabbages, and the other shoe
-            amongst the potatoes.
-          </p>
           <NavWrapper>
             <NavContainer>
               <h1 style={{ margin: 0 }}>
@@ -68,7 +57,7 @@ const ImageOne = ({ children }) => (
                 >
                   <img
                     style={{
-                      width: '333px',
+                      width: '133px',
                     }}
                     src={logo}
                     alt="Geff Logo"
@@ -77,6 +66,17 @@ const ImageOne = ({ children }) => (
               </h1>
             </NavContainer>
           </NavWrapper>
+          <Img fluid={data.file.childImageSharp.fluid} />
+
+          <div>{children}</div>
+          <p>
+            Peter was most dreadfully frightened, he rushed all over the garden,
+            for he had forgotten the way back to the gate.
+          </p>
+          <p>
+            He lost one of his shoes among the cabbages, and the other shoe
+            amongst the potatoes.
+          </p>
           <Link to="/10_english"> or go back one page </Link>
         </Layout>
       </>

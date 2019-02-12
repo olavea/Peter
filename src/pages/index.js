@@ -5,6 +5,7 @@ import zero from '../images/peter04.jpg'
 import SEO from '../components/seo'
 import styled from 'styled-components'
 import logo from '../images/peter-icon2.png'
+import Header from '../components/header'
 
 const NavWrapper = styled.div`
   background: #ffa500;
@@ -55,6 +56,9 @@ const IndexPage = () => (
         </h1>
       </NavContainer>
     </NavWrapper>
+    <div>
+      <Header nextPage="/wes/26_english " />
+    </div>
   </Layout>
 )
 

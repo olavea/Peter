@@ -4,7 +4,7 @@ module.exports = {
     description: `Produced by Robert Cicconetti, Ronald Holder and the PG Online
     Distributed Proofreading Team (http://www.pgdp.net).`,
     author: `Beatrix Potter`,
-    dev: `Ola Vea made another OlaBook`,
+    dev: `Ola Vea made an old OlaBook`,
     pageNav: [{ label: 'Back', path: '/' }],
   },
   plugins: [
@@ -22,7 +22,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/peter-eye-con9.png`, // This path is relative to the root of the site.
+        icon: `src/images/Young_Beatrix_Potter.jpg`, // This path is relative to the root of the site.
       },
     },
 

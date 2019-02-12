@@ -2,7 +2,10 @@ import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 
-import logo from '../images/peter-icon8_eye.png'
+import logo from '../images/Young_Beatrix_Potter.jpg'
+import pogo from '../images/uniparrot4.png'
+// the path to the image
+/// back one dir ../
 
 const HeaderWrapper = styled.div`
   background: #ffffff;
@@ -20,29 +23,29 @@ const HeaderContainer = styled.div`
 
 const Header = ({ siteTitle }) => (
   <HeaderWrapper>
-    <HeaderContainer>
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          <img
-            style={{
-              width: '66px',
-            }}
-            src={logo}
-            alt="Geff Logo"
-          />
-        </Link>
-      </h1>
-    </HeaderContainer>
+    <HeaderContainer />
   </HeaderWrapper>
 )
 
 export default Header
+
+{
+  /*
+  <h3 className="nextpage">
+          <span>{this.props.nextPage}</span>
+        </h3>
+
+ta imot submit eller onClick
+
+  Hva bruker jeg for å bestemme hva som er denne siden?
+Hva bruker vi for å bestemme hva som er neste side?
+skal jeg bruke markdown? for å lage sidene?
+jaaa... følege oppøegget til Scott
+skal jeg bruke navnet på page`?
+
+hvordan bytter jeg side?
+*/
+}
 
 //ffa500 orange
 // #ffce00 yellow
@@ -50,3 +53,6 @@ export default Header
 // <button>
 //           <Link to="/2">This page +1 Page -> </Link>
 //         </button>
+{
+  /*page query slug next page , markdown something */
+}

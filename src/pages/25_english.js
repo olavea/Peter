@@ -5,12 +5,12 @@ import { StaticQuery, graphql, Link } from 'gatsby'
 
 import styled from 'styled-components'
 
-import logo from '../images/peter-icon2.png'
+import logo from '../images/uniparrot4.png'
 
 const NavWrapper = styled.div`
-  background: #ffa500;
+  background: #ffffff;
 
-  margin-bottom: 0.33rem;
+  margin-bottom: 0.13rem;
   img {
     margin-bottom: 0;
   }
@@ -20,7 +20,7 @@ const NavContainer = styled.div`
   margin: 0 auto;
 
   max-width: 960px;
-  padding: 0.33rem;
+  padding: 0.13rem;
 `
 
 const ImageOne = ({ children }) => (
@@ -45,18 +45,6 @@ const ImageOne = ({ children }) => (
     render={data => (
       <>
         <Layout>
-          <Img fluid={data.file.childImageSharp.fluid} />
-
-          <div>{children}</div>
-          <p>
-            I am sorry to say that Peter was not very well during the evening.
-          </p>
-          <p>
-            His mother put him to bed, and made some camomile tea, and she gave
-            a dose of it to Peter!
-          </p>
-          <p>'One table-spoonful to be taken at bed-time.'</p>
-
           <NavWrapper>
             <NavContainer>
               <h1 style={{ margin: 0 }}>
@@ -69,7 +57,7 @@ const ImageOne = ({ children }) => (
                 >
                   <img
                     style={{
-                      width: '333px',
+                      width: '133px',
                     }}
                     src={logo}
                     alt="Geff Logo"
@@ -78,6 +66,18 @@ const ImageOne = ({ children }) => (
               </h1>
             </NavContainer>
           </NavWrapper>
+          <Img fluid={data.file.childImageSharp.fluid} />
+
+          <div>{children}</div>
+          <p>
+            I am sorry to say that Peter was not very well during the evening.
+          </p>
+          <p>
+            His mother put him to bed, and made some camomile tea, and she gave
+            a dose of it to Peter!
+          </p>
+          <p>'One table-spoonful to be taken at bed-time.'</p>
+
           <Link to="/24_english"> or go back one page </Link>
         </Layout>
       </>
